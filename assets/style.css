@@ -1,0 +1,177 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div[class*="Select"] {
+	border: none;
+
+}
+
+div.Select-multi-value-wrapper{
+	border:none;
+	width: 100%;
+}
+
+div.Select-value-label {
+	width: 100%;
+}
+
+div.Select-control {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+span.Select-clear {
+	color: rgba(105, 4, 59, 1);
+	font-weight: bold;
+	display: none;
+}
+
+span.Select-arrow{
+	color: rgba(105, 4, 59, 1);
+	font-weight: bold;
+}
+
+div.Select-value{
+	text-transform: capitalize;
+	font-weight: bold;
+	text-align: center;
+	border:none;
+	width: 100%;
+	border: 3px solid rgba(105, 4, 59, 0.5);
+	border-radius: 10px;
+	transition: 0.1s;
+}
+
+#frame_jn {
+	width: 100%;
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#frame_jn iframe {
+	width: 80%;
+	height: 100%;
+}
+
+div.schema_chart {
+	margin-top: 80px;
+	/*display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;*/
+}
+
+.has-value.Select--single>.Select-control .Select-value .Select-value-label
+{
+	color: #5a0333;
+
+}
+
+.has-value.Select--single>.Select-control .Select-value:hover .Select-value-label
+{
+	color: #fff;
+}
+
+div.Select-value:hover {
+	background-color: rgba(105, 4, 59, 1);
+}
+
+div.Select-value:focus {
+	background-color: rgba(105, 4, 59, 1);
+}
+
+div.Select-menu-outer {
+	width: 100%;
+}
+
+.plot-container .svg-container {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+div#graph_plot {
+	width: 100%;
+}
+
+div.plot-container.plotly {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+svg.main-svg {
+	margin-left: auto;
+	margin-right: auto;
+	size: 100%;
+}
+
+div.Select-menu {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.menu-deroulant .Select--multi .Select-value {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu-deroulant .VirtualizedSelectFocusedOption {
+	background-color: rgba(105, 4, 59, 0.5);
+
+}
+
+.menu-deroulant .VirtualizedSelectOption {
+	text-transform: capitalize;
+	color: black;
+}
+
+input#drop_tables_map {
+	border: none;
+}
+
+.Header {
+	z-index: 9999999;
+	position: fixed 0 0;
+	align-self: top;
+}
+
+div.dash-graph {
+	margin-top: 80px;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+#title-metadata {
+	scale: 60%;
+	text-align: center;
+}
+
+#metadata {
+	scale: 90%;
+}
+
+#visualisation {
+	scale: 60%;
+	text-align: center;
+}
+
+h1 {
+	scale: 60%;
+	text-align: center;
+}
