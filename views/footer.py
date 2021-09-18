@@ -3,8 +3,6 @@ import dash_core_components as dcc
 import dash_html_components as html
 import os 
 import json
-from dash_html_components.H2 import H2
-from dash_html_components.P import P
 import plotly.graph_objects as go
 import pandas as pd 
 import plotly.express as px

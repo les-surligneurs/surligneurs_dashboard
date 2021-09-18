@@ -4,6 +4,8 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 from views.index import index
+from views.header import  header
+from views.footer import footer 
 
 
 app = dash.Dash(__name__ ,suppress_callback_exceptions=True,external_stylesheets=[dbc.themes.LUX] )
@@ -12,10 +14,8 @@ app.layout = html.Div([dcc.Location(id='url', refresh=True), html.Div(id='page-c
 
 @app.callback(Output('page-content', 'children'),[Input('url', 'pathname')]  )
 def display_page(pathname):
-   
-        return html.Div([ index])
-
-
+        if (pathname == '/'):
+                return html.Div([   html.Div([header , html.Br(children=[]) , index , html.Br(children=[])  , footer]) ])
 
 if __name__ == '__main__':   
     app.run_server(debug=False)
