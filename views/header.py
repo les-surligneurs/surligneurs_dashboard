@@ -1,17 +1,17 @@
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
-import os 
+from dash import dcc
+from dash import html
+import os
 import json
 import plotly.graph_objects as go
-import pandas as pd 
+import pandas as pd
 import plotly.express as px
 
 
 
 # Conteneur du menu
 header = html.Div(
-                className="Header", 
+                className="Header",
                 children=[html.Header(
                                     className="header",
                                     children=[
@@ -19,7 +19,7 @@ header = html.Div(
                                         html.Div(
                                                 className="header banner",
                                         ),
-                                        #menu avec les liens 
+                                        #menu avec les liens
                                         html.Div(
                                                 className="header menu",
                                                 children=[
@@ -132,7 +132,7 @@ header = html.Div(
                                                     )
                                                 ]
                                             )
-                                        
+
                                     ]
                             )
                         ]
