@@ -4,7 +4,7 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 from data.Article import Article
 from dash.dependencies import Input, Output, State
-from dash import dcc
+import dash_core_components as dcc
 
 article = Article()
 all_titles = article.get_all_artcile()
