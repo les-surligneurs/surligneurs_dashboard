@@ -9,13 +9,12 @@ body {
 }
 .Header {
     z-index: 9999999;
-    position: fixed;
     width: 100%;    
     height: 60px;
     margin: 0;
     padding: 0;
-    margin-top: -80px;
-    background-color: white;
+    margin-top: 0px;
+    background-color: #454d55;
 }
 
 header {
@@ -37,11 +36,11 @@ div.header.menu {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    box-shadow: 0px 5px 10px rgba(105, 4, 59, 0.5);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 div.logo_uvsq {
-    width: 10%;
+    width: 15%;
     height: 100%;
 }
 
@@ -58,7 +57,8 @@ div.logo_uvsq img{
 div.logo_github {
     width: 5%;
     height: 100%;
-    background-color: rgba(105, 4, 59, 1);
+    margin-left: auto;
+    background-color: #454d55;
 }
 
 div.logo_github a{
@@ -78,9 +78,9 @@ div.logo_github a img{
 }
 
 div.logo_github a:hover {
-    box-shadow: -3px 0 5px rgba(105, 4, 59, 0.7);
+    box-shadow: -3px 0 5px rgba(255, 255, 255, 0.7);
     transition: 0.2s;
-    background-color: #FFF;
+
 }
 
 img {
